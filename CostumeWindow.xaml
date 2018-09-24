@@ -1,0 +1,30 @@
+﻿<Window x:Class="UI.CostumeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="CostumeWindow" Height="300" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Name="SubmicButton" Grid.Row="1" Margin="40,30,40,30" Click="SubmicButton_Click">
+            <TextBlock Text="Submit" FontSize="20" FontStyle="Oblique" FontWeight="DemiBold"/>
+        </Button>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Size of board:" VerticalAlignment="Center"  FontSize="20" FontStyle="Oblique" FontWeight="DemiBold"/>
+            <TextBox Name="SizeOfBoardtbx" Margin="200,15,20,15"/>
+
+            <TextBlock Grid.Row="1" Text="Amount of bombs:" VerticalAlignment="Center"  FontSize="20" FontStyle="Oblique" FontWeight="DemiBold"/>
+            <TextBox Grid.Row="1" Name="AmountOfBombstbx" Margin="200,15,20,15"/>
+        </Grid>
+
+    </Grid>
+</Window>

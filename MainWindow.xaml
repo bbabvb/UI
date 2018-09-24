@@ -1,0 +1,30 @@
+﻿<Window x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="Log in window" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="10" Grid.Row="0" Text="Username:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="28" FontWeight="DemiBold" FontStyle="Oblique"/>
+        <TextBox Name="UserNametbx" Grid.Row="0" Margin="200,66,175,66" RenderTransformOrigin="0.499,0.816" BorderThickness="3"/>
+
+        <TextBlock Margin="10" Grid.Row="1" Text="Password:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="28" FontWeight="DemiBold" FontStyle="Oblique"/>
+        <TextBox Name="Passwordtbx" Grid.Row="1" Margin="200,66,175,66" RenderTransformOrigin="0.499,0.816" BorderThickness="3"/>
+
+
+        <Button Name="LoginButton" Grid.Row="2" Margin="200,21,400,23" Click="LoginButton_Click">
+            <TextBlock Text="Log In" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"></TextBlock>
+        </Button>
+        <Button Name="RegistarButton" Grid.Row="2" Margin="425,21,175,23" Click="RegistarButton_Click">
+            <TextBlock Text="Registar" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"></TextBlock>
+        </Button>
+        
+    </Grid>
+</Window>
